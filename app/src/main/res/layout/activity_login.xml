@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/gradient_background"
+    tools:context=".Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:theme="@style/AppTheme"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:textSize="45sp"
+                android:id="@+id/appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"/>
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="Enter Email"
+                android:textColor="#ECF0F6"
+                android:textColorHint="#FFFFFF" />
+
+
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="Enter Password"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:inputType="textPassword"
+                android:textColor="#E6E9EEF3"
+                android:textColorHint="#F8FFFFFF" />
+
+
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+
+                android:backgroundTint="@color/colorwhite"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mess_con_password" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/login_button"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_shape"
+                    android:text="@string/login"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F7FFFFFF" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/forgot_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forgot"
+                    style="@style/fonts"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    style="@style/fonts"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/register_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/fonts"
+                    android:text="@string/register_now"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    style="@style/fonts"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/admin_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/fonts"
+                    android:text="I am Admin"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

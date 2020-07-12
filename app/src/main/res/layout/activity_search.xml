@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/seacrh"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/orangecolor"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        >
+        <EditText
+            android:id="@+id/searchtext"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:background="@color/whiteColor"
+            android:padding="9dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:hint="Books name or author name"
+            android:textColorHint="@color/blackColor"
+            />
+        <Spinner
+            android:id="@+id/searchby"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/searchtext"
+            android:padding="9dp"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="Search"
+            android:textSize="8dp"
+            android:textStyle="bold"
+            android:padding="9dp"
+            android:textColor="@color/whiteColor"
+            android:layout_centerVertical="true"
+            android:background="@color/orangecolor"
+            android:layout_toRightOf="@+id/searchby"
+
+            />
+
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchrec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/seacrh"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

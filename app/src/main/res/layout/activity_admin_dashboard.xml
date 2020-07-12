@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_dashboard"
+    android:background="@color/gradient_background"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:theme="@style/AppTheme"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:textSize="40sp"
+                android:id="@+id/appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome To Admin"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/addbook"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_shape"
+                    android:text="Add Book"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F7FFFFFF" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/removebook"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_shape"
+                    android:text="Remove Book"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F7FFFFFF" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/createadmin"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_shape"
+                    android:text="Create admin"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F7FFFFFF" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/Modifyboook"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_shape"
+                    android:text="Modify Book"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F7FFFFFF" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/checkneworder"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_shape"
+                    android:text="check new order"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F7FFFFFF" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/logout"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_shape"
+                    android:text="Logout"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F7FFFFFF" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

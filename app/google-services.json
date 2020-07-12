@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "117213380573",
+    "firebase_url": "https://onlinebookstore-e7723.firebaseio.com",
+    "project_id": "onlinebookstore-e7723",
+    "storage_bucket": "onlinebookstore-e7723.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117213380573:android:28cc5db2d23847c1314034",
+        "android_client_info": {
+          "package_name": "com.raju.onlinebookstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117213380573-c8h9huo2bvjsicncvam99qrit1hakl6e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raju.onlinebookstore",
+            "certificate_hash": "2527aa84b20af4fbac3c6f9ba82e6006d4513572"
+          }
+        },
+        {
+          "client_id": "117213380573-vujqljpsp3hsaneneldukn0maae72j9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVttoQOpgjKOItf4C5uUPUk1tcZaomNIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117213380573-vujqljpsp3hsaneneldukn0maae72j9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

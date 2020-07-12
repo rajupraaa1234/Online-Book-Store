@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gradient_background"
+    tools:context=".Createadmin"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="250dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:theme="@style/AppTheme">
+
+            <TextView
+                android:id="@+id/appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Create New Admin"
+                android:textColor="#fff"
+                android:textSize="42sp" />
+
+
+            <EditText
+                android:id="@+id/userid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="Admin user id"
+                android:inputType="textEmailAddress"
+                android:textColor="#ECF0F6"
+                android:textColorHint="#FFFFFF" />
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="Admin Name"
+                android:inputType="textEmailAddress"
+                android:textColor="#ECF0F6"
+                android:textColorHint="#FFFFFF" />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="Admin Password"
+                android:inputType="textPassword"
+                android:textColor="#E6E9EEF3"
+                android:textColorHint="#F8FFFFFF" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/login_button"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:layout_width="179dp"
+                    android:layout_height="58dp"
+                    android:background="@drawable/rounded_shape"
+                    android:text="Create"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F7FFFFFF" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

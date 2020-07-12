@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    android:background="@color/gradient_background"
+
+    <item>
+        <shape>
+            <solid android:color="#F39421"></solid>
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@mipmap/applogo1" android:gravity="center"/>
+    </item>
+</layer-list>

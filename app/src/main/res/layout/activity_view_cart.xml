@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCart">
+
+     <RelativeLayout
+         android:id="@+id/billrel"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:background="@color/orangecolor"
+         android:layout_alignParentTop="true"
+         >
+         <TextView
+             android:id="@+id/bill"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:textColor="@color/colorwhite"
+             android:text="Total Price : "
+             android:textSize="25dp"
+             android:layout_marginTop="10dp"
+             android:textAlignment="center"
+             />
+     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/msg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/blackColor"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:text="Congratulation, your final order has been placed successfully.you will received your order very soon "
+        android:textSize="20dp"
+        android:visibility="gone"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/billrel"
+        android:layout_above="@+id/next_btn"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/orangecolor"
+        android:text="Next"
+        android:textColor="@color/colorwhite"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>

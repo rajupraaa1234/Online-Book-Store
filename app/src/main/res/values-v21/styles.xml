@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="exampleToast">
+        <item name="colorBackground">#DF94FFAB</item>
+        <item name="textColor">#FA090808</item>
+        <item name="strokeColor">#69F0AE</item>
+        <item name="strokeWidth">30dp</item>
+        <item name="length">LONG</item>
+        <item name="cornerRadius">3dp</item>
+    </style>
+</resources>

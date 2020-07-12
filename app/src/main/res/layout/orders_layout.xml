@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/orangecolor"
+        >
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="User name"
+            android:textColor="@color/colorwhite"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:text="Phone Number"
+            android:textColor="@color/colorwhite"
+            android:textSize="14dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cartbookqautity"
+            android:gravity="center"
+            android:text="Price"
+            android:textColor="@color/colorwhite"
+            android:textSize="14dp"
+            android:layout_marginTop="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/order_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:gravity="center"
+            android:text="Address,city"
+            android:textColor="@color/colorwhite"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_address"
+            android:gravity="center"
+            android:text="Date and time"
+            android:textColor="@color/colorwhite"
+            android:textSize="14dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/order_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/date_time"
+            android:background="@color/bluecolor"
+            android:text="Show the order details"
+            android:textColor="@color/whiteColor"
+            android:textSize="20dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

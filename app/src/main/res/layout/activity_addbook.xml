@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gradient_background"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:theme="@style/AppTheme"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a new Book"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+              <ImageView
+                  android:id="@+id/bookimage"
+                  android:layout_width="350dp"
+                  android:layout_height="200dp"
+                  android:cropToPadding="false"
+                  android:src="@drawable/book"
+                  />
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="2dp"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Book image"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:theme="@style/AppTheme"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/bookid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="Enter Book id"
+                android:textColor="#ECF0F6"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/bookauthore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="Enter Author Name"
+                android:textColor="#ECF0F6"
+                android:textColorHint="#FFFFFF" />
+            <EditText
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="Enter Subject"
+                android:textColor="#ECF0F6"
+                android:textColorHint="#FFFFFF" />
+            <EditText
+                android:id="@+id/bookname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="Enter Book Title or Name"
+                android:textColor="#ECF0F6"
+                android:textColorHint="#FFFFFF" />
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="Enter Book Price"
+                android:textColor="#ECF0F6"
+                android:inputType="number"
+                android:textColorHint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/addbook_btn"
+                style="@style/AppTheme.RoundedCornerMaterialButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_shape"
+                android:text="Upload"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#F7FFFFFF" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
